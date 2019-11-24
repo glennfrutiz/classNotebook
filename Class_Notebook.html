@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!--https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link-->
+<!--https://www.quackit.com/html/html_editors/scratchpad/?example=/html/codes/html_scroll_box_basic-->
+<!--https://css-tricks.com/how-to-create-a-notebook-design-with-css/-->
+<!--https://www.w3schools.com/css/css_navbar.asp-->
+<html>
+
+  <head>
+  <style>
+  .menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li{
+    display: inline;
+  }
+  li a{
+    display: inline;
+    color: white;
+    font-family: Arial Black;
+
+    padding: 14px;
+  }
+  li a:hover{
+    background-color: red;
+  }
+  .active {
+    background-color: red;
+  }
+  body {
+    background-color :#f5f5f5;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  h4 {
+    color: #cd0000;
+    font-size: 42px;
+    letter-spacing: -2px;
+    text-align: center;
+    font-family: Arial Black;
+  }
+  h2 {
+    color: #cd0000;
+    font-size: 20px;
+    letter-spacing: -2px;
+    text-align: center;
+    font-family: Arial Black;
+  }
+  .list {
+    color: #555;
+    font-size: 15px;
+    padding: 0 !important;
+    width: 500px;
+    font-family: Arial Black, monospace;
+    border: 1px solid #dedede;
+  }
+  .list tr:nth-child(1){
+    height: 10px
+
+  }
+  .list tr {
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    text-indent: 25px;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+  .list td{
+    font-family: Arial Black;
+    border-bottom:1px solid blue;
+  }
+  .list td:nth-child(2){
+
+    border-left: 1px solid red;
+  }
+  .list tr:hover {
+    background-color: #f0f0f0;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -ms-transition:     all 0.2s;
+    -o-transition:      all 0.2s;
+  }
+  .lines {
+
+    width: 2px;
+    float: left;
+    height: 1000px;
+    margin-left: 250px
+  }
+  button{
+    font-family: Arial Black;
+    color:#555;
+    padding:0;
+    font-size: 15px;
+    background-color :#f5f5f5;
+    transition-duration: 0.4s;
+    border: none;
+  }
+
+  button:hover{
+
+    color: white;
+    background-color: Red
+
+
+  }
+  </style>
+  </head>
+  <center>
+
+
+  <body>
+
+    <h4>Table of Contents for Class Notebook</h4>
+      <ul class = "menu">
+        <li><a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Home\home_page.html">Home</a></li>
+        <li><a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Calendar\calendar.html">Calendar</a></li>
+        <li><a class = "active" href = "C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Class_Notebook.html">Class Notebook</a></li>
+        <li><a href = "C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Contact Me\contact_me.html">Contact Me</a></li>
+      </ul>
+
+    <div class = "lines" style="height:500px;width:500px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+    <center>
+
+
+    <table class = "list">
+      <thead>
+        <td>
+          Page
+        </td>
+        <td>
+          Assignment
+        </td>
+
+
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1.
+          </td>
+          <td>
+            Table of Contents 1-52
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2.
+          </td>
+
+          <td>
+            Table of Contents 53-104
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3.
+          </td>
+          <td>
+            Table of Contents 105-140
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Chemistry Lab Equipment Activity.pdf" download><button>Chemistry Lab Equipment</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            5.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Lab Safety.pptx.pdf"><button>Lab Safety Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            6.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\[Template] Scientific Method Thumb Lab Report.pdf"><button>Thumb Lab Report</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            7.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Scientific Method Review 2.pptx.pdf"><button>Scientific Method Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            8.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\The Scientific Method_ Bubble Gum Lab.pdf"><button>Bubble Gum Lab</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            9.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\graph paper.pdf"><button>Bubble Gum Lab Graph</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            10.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Spongebob Controls and Variables.pdf"><button>Scientific Method Controls and Variables</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            11.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Metric System 2019.pdf"><button>Metric System Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            12.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Metric Measurement Conversions.pdf"><button>Metric Measurements Conversions</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            13.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Metric Measurement Lab.pdf"><button>Metric Measurement Boot Camp Lab</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            14.
+          </td>
+          <td>
+            Responses to Questions on Boot Camp Lab
+          </td>
+        </tr>
+        <tr>
+          <td>
+            15.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\dimensional_analysis_notes.pdf"><button>Dimensional Analysis Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            16.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\DA Practice I.pdf"><button>Dimensional Unit Conversion Worksheet</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            17.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Measures-English,_Metric,_and_Equivalents.pdf"><button>Conversion Tables</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            18.
+          </td>
+          <td>
+            Responses to Dimensional Analysis Stations
+          </td>
+        </tr>
+        <tr>
+          <td>
+            19.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Graphing.pdf"><button>Graphing Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            20.
+          </td>
+          <td>
+            Responses to Graphing Stations
+          </td>
+        </tr>
+        <tr>
+          <td>
+            21.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Density Slides 2019.pdf"><button>Density Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            22.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\density worksheet preap.pdf"><button>Density Worksheet</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            23.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\v vs density phet.pdf"><button>Volume vs Density PhET</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            24.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\mass vs density lab 2019.pdf"><button>Mass vs Density Lab</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            25.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Notes_-_scientific_notation.pdf"><button>Scientific Notation Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            26.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\ScientificNotationWorksheet+Answers.pdf"><button>Scientific Notation Practice</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            27.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Significant figures.pdf"><button>Significant Figures Notes</button></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            28.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\worksheet_Sig_Fig_9_11_08.pdf"><button>Significant Figures Worksheet</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            29.
+          </td>
+          <td>
+            Responses to Significant Figure Stations
+          </td>
+        </tr>
+        <tr>
+          <td>
+            30.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Density of Coins and Sig Figs.pdf"><button>Density of Coins and Sig Figs Lab</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            31.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Atomic History Notes.pdf"><button>Atomic History Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            32.
+          </td>
+          <td>
+            Script for Flipgrid
+          </td>
+        </tr>
+        <tr>
+          <td>
+            33.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\elementbuilder_gizmo_studentworksheet.pdf"><button>Element Builder Gizmo Page 1</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            34.
+          </td>
+          <td>
+            Element Builder Gizmo Page 2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            35.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Atomic Mass of Beanium.pdf"><button>Beanium Lab</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            36.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\PhET Isotopes WS.pdf"><button>PhET on Isotopes Page 1</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            37.
+          </td>
+          <td>
+            PhET on Isotopes Page 2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            38.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Bohr models_lewis-dot-diagram_ions 2017.pdf"><button>Bohr Model Practice Page 1</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            39.
+          </td>
+          <td>
+            Bohr Model Practice Page 2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            40.
+          </td>
+
+          <td>
+            <a href="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\ionic and covalent bonding 2019.pptx.pdf"><button>Notes on Ions</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            41.
+          </td>
+          <td>
+            <a href="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\lewis_dot_activities-1-2.pdf"><button>Lewis Dot Structures Activity 1 and 2</button></a>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            42.
+          </td>
+          <td>
+            <a href="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Nomenclature_Worksheets covers all.pdf"><button>Simple Binary Ionic Compounds</button></a>
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            43.
+          </td>
+          <td>
+            <a href="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Ionic_Bonding_Puzzle.pdf"><button>Ionic Puzzle Piece Activity</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            44.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\NamingWSandRules.pdf"><button>Naming Covalent Compounds</button></a>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            45.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\ionic and covalent bonding 2019.pptx.pdf"><button>Covalent Compounds Notes</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            46.
+          </td>
+          <td>
+            WarmUp: Covalent Bonds
+          </td>
+        </tr>
+        <tr>
+          <td>
+            47.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Bohr Model Cards activity.pdf"><button>Bohr Model Lab</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            48.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\lewis_dot_activities-3-4.pdf"><button>Lewis Structures for Molecular Compounds</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            49.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\GIZMO_covalent_bonds.pdf"><button>Covalent Bonds Gizmo Page 1</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            50.
+          </td>
+          <td>
+            Covalent Bonds Gizmo Page 2
+          </td>
+        </tr>
+        <tr>
+          <td>
+            51.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Covalent Bonding Model Set Activity.pdf"><button>Covalent Bonding Model Set Activity</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            52.
+          </td>
+          <td>
+            <a href ="C:\Users\Glenn\Documents\GitHub\desktop-tutorial\Class_Notebook\Assignments\Physical  Chemical.ppt.pdf"><button>Notes on Physical and Chemical Changes</button></a>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    </center>
+  </body>
+</center>
+</html>
