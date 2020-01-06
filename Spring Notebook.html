@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--The following link was used to make download buttons-->
+<!--https://stackoverflow.com/questions/364946/how-to-make-pdf-file-downloadable-in-html-link-->
+
+<!--The following link was used to implement a scroll box in the middle of the page.-->
+<!--https://www.quackit.com/html/html_editors/scratchpad/?example=/html/codes/html_scroll_box_basic-->
+<!--https://www.w3schools.com/css/css_navbar.asp-->
+
+<!--The following link was used to help implement a notebook page theme.-->
+<!--A table of class list is nested within a div element of class lines. -->
+<!--https://css-tricks.com/how-to-create-a-notebook-design-with-css/-->
+
+<html>
+
+  <head>
+  <style>
+  .menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li{
+    display: inline;
+  }
+  li a{
+    display: inline;
+    color: white;
+    font-family: Arial Black;
+    padding: 14px;
+  }
+  li a:hover{
+    background-color: #cd0000;
+  }
+  .active {
+    background-color: #cd0000;
+  }
+  body {
+    background-color :#f5f5f5;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  h4 {
+    color: #cd0000;
+    font-size: 35px;
+    letter-spacing: -2px;
+    text-align: center;
+    font-family: Arial Black;
+  }
+  h2 {
+    color: #cd0000;
+    font-size: 18px;
+    letter-spacing: -2px;
+    text-align: center;
+    font-family: Arial Black;
+  }
+  .list {
+    color: #555;
+    font-size: 15px;
+    padding: 0 !important;
+    width: 500px;
+    font-family: Arial Black, monospace;
+    border: 1px solid #dedede;
+  }
+  .list tr:nth-child(1){
+    height: 10px
+  }
+  .list tr {
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    text-indent: 25px;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+  .list td{
+    font-family: Arial Black;
+    border-bottom:1px solid blue;
+  }
+  .list td:nth-child(2){
+    border-left: 1px solid red;
+  }
+  .list tr:hover {
+    background-color: #f0f0f0;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -ms-transition:     all 0.2s;
+    -o-transition:      all 0.2s;
+  }
+  .lines {
+    width: 2px;
+    float: left;
+    height: 1000px;
+    margin-left: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  button{
+    font-family: Arial Black;
+    color:#555;
+    padding:0;
+    font-size: 15px;
+    background-color :#f5f5f5;
+    transition-duration: 0.4s;
+    border: none;
+  }
+  button:hover{
+    color: white;
+    background-color: #cd0000;
+  }
+  </style>
+  </head>
+  <center>
+
+
+  <body>
+
+    <h4>Table of Contents for Class Notebook</h4>
+      <ul class = "menu">
+        <li><a href ="https://glennfrutiz.github.io/mrFrutiz/">Home</a></li>
+        <li><a href ="https://glennfrutiz.github.io/ipcCalendar/">Calendar</a></li>
+        <li><a class = "active" href = "">Class Notebook</a></li>
+        <li><a href = "https://glennfrutiz.github.io/ipcContact/">Contact Me</a></li>
+      </ul>
+
+    <h2>All assignments given so far are found below. You can download most of these assignments by hovering over them and clicking on their names.</h2>
+    <div class = "lines" style="height:500px;width:500px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;">
+    <center>
+
+
+    <table class = "list">
+      <thead>
+        <td>
+          Page
+        </td>
+        <td>
+          Assignment
+        </td>
+
+
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1.
+          </td>
+          <td>
+            Table of Contents 1-52
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2.
+          </td>
+
+          <td>
+            Table of Contents 53-104
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3.
+          </td>
+          <td>
+            Table of Contents 105-140
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4.
+          </td>
+          <td>
+            <a href ="Assignments/Chemistry Lab Equipment Activity.pdf" download><button>Chemistry Lab Equipment</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            5.
+          </td>
+          <td>
+            <a href ="Assignments/Lab Safety.pptx.pdf" download><button>Lab Safety Notes</button></a>
+          </td>
+        </tr>
+      
+
+      </tbody>
+    </table>
+    </center>
+  </body>
+  </center>
+</html>
